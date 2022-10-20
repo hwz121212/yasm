@@ -1,0 +1,1 @@
+..\..\..\..\..\tool\yasm-1.3.0\genmacro.exe nasm-macros.c nasm_standard_mac nasm-std.mac

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4A08A3C4-920F-3E67-8AF3-8FBA0FE13092}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>yasmstd</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..;..\include;..\modules;..\include\libyasm;$(SolutionDir)thirdparty\intl-0.19.8.1\include</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>BUILD_SHARED_LIBS;WIN32;_WINDOWS;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;yasmstd_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>yasm.lib;intl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..;..\include;..\modules;..\include\libyasm;$(SolutionDir)thirdparty\intl-0.19.8.1\include</AdditionalIncludeDirectories>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>BUILD_SHARED_LIBS;WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;yasmstd_EXPORTS</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>yasm.lib;intl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="arch\lc3b\lc3bid.c" />
+    <ClCompile Include="arch\x86\x86cpu.c" />
+    <ClCompile Include="arch\x86\x86regtmod.c" />
+    <ClCompile Include="init_plugin.c" />
+    <ClCompile Include="arch\lc3b\lc3barch.c" />
+    <ClCompile Include="arch\lc3b\lc3bbc.c" />
+    <ClCompile Include="arch\x86\x86arch.c" />
+    <ClCompile Include="arch\x86\x86bc.c" />
+    <ClCompile Include="arch\x86\x86expr.c" />
+    <ClCompile Include="arch\x86\x86id.c" />
+    <ClCompile Include="parsers\gas\gas-token.c" />
+    <ClCompile Include="parsers\nasm\nasm-token.c" />
+    <ClCompile Include="listfmts\nasm\nasm-listfmt.c" />
+    <ClCompile Include="parsers\gas\gas-parser.c" />
+    <ClCompile Include="parsers\gas\gas-parse.c" />
+    <ClCompile Include="parsers\gas\gas-parse-intel.c" />
+    <ClCompile Include="parsers\nasm\nasm-parser.c" />
+    <ClCompile Include="parsers\nasm\nasm-parse.c" />
+    <ClCompile Include="preprocs\nasm\nasm-pp.c" />
+    <ClCompile Include="preprocs\nasm\nasm-preproc.c" />
+    <ClCompile Include="preprocs\nasm\nasmlib.c" />
+    <ClCompile Include="preprocs\nasm\nasm-eval.c" />
+    <ClCompile Include="preprocs\raw\raw-preproc.c" />
+    <ClCompile Include="preprocs\cpp\cpp-preproc.c" />
+    <ClCompile Include="preprocs\gas\gas-preproc.c" />
+    <ClCompile Include="preprocs\gas\gas-eval.c" />
+    <ClCompile Include="dbgfmts\codeview\cv-dbgfmt.c" />
+    <ClCompile Include="dbgfmts\codeview\cv-symline.c" />
+    <ClCompile Include="dbgfmts\codeview\cv-type.c" />
+    <ClCompile Include="dbgfmts\dwarf2\dwarf2-dbgfmt.c" />
+    <ClCompile Include="dbgfmts\dwarf2\dwarf2-line.c" />
+    <ClCompile Include="dbgfmts\dwarf2\dwarf2-aranges.c" />
+    <ClCompile Include="dbgfmts\dwarf2\dwarf2-info.c" />
+    <ClCompile Include="dbgfmts\null\null-dbgfmt.c" />
+    <ClCompile Include="dbgfmts\stabs\stabs-dbgfmt.c" />
+    <ClCompile Include="objfmts\dbg\dbg-objfmt.c" />
+    <ClCompile Include="objfmts\bin\bin-objfmt.c" />
+    <ClCompile Include="objfmts\elf\elf.c" />
+    <ClCompile Include="objfmts\elf\elf-objfmt.c" />
+    <ClCompile Include="objfmts\elf\elf-x86-x86.c" />
+    <ClCompile Include="objfmts\elf\elf-x86-amd64.c" />
+    <ClCompile Include="objfmts\elf\elf-x86-x32.c" />
+    <ClCompile Include="objfmts\coff\coff-objfmt.c" />
+    <ClCompile Include="objfmts\coff\win64-except.c" />
+    <ClCompile Include="objfmts\macho\macho-objfmt.c" />
+    <ClCompile Include="objfmts\rdf\rdf-objfmt.c" />
+    <ClCompile Include="objfmts\xdf\xdf-objfmt.c" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

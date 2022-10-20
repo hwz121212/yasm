@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\assocdat.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bitvect.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bc-align.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bc-data.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bc-incbin.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bc-org.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bc-reserve.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bytecode.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmake-module.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\errwarn.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\expr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\floatnum.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hamt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\insn.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intnum.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inttree.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linemap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\md5.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mergesort.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\phash.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\section.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strcasecmp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strsep.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\symrec.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\valparam.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\value.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmalloc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xstrdup.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{fb64c226-39c9-4b45-8664-02aa58f1a804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2CB02268-A63B-339B-A75A-F98208FC110B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\libyasm">
+      <UniqueIdentifier>{56da392e-8fcb-42d8-a82e-8786e762fd05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\libyasm\arch.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\assocdat.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\bitvect.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\bytecode.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\compat-queue.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\config.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\coretype.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\dbgfmt.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\errwarn.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\expr.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\file.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\floatnum.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\hamt.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\insn.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\intnum.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\inttree.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\libyasm.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\libyasm-stdint.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\linemap.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\listfmt.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\md5.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\module.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\objfmt.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\parser.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\phash.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\preproc.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\section.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\symrec.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\util.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\valparam.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libyasm\value.h">
+      <Filter>include\libyasm</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

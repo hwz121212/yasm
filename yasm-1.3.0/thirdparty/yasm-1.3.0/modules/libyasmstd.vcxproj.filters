@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="init_plugin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\lc3b\lc3barch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\lc3b\lc3bbc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\x86\x86arch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\x86\x86bc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\x86\x86expr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\x86\x86id.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="listfmts\nasm\nasm-listfmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\gas\gas-parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\gas\gas-parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\gas\gas-parse-intel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\nasm\nasm-parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\nasm\nasm-parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\nasm\nasm-pp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\nasm\nasmlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\nasm\nasm-eval.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\raw\raw-preproc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\cpp\cpp-preproc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\gas\gas-preproc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\gas\gas-eval.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\codeview\cv-dbgfmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\codeview\cv-symline.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\codeview\cv-type.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\dwarf2\dwarf2-dbgfmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\dwarf2\dwarf2-line.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\dwarf2\dwarf2-aranges.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\dwarf2\dwarf2-info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\null\null-dbgfmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\stabs\stabs-dbgfmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\dbg\dbg-objfmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\bin\bin-objfmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\elf\elf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\elf\elf-objfmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\elf\elf-x86-x86.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\elf\elf-x86-amd64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\elf\elf-x86-x32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\coff\coff-objfmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\coff\win64-except.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\macho\macho-objfmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\rdf\rdf-objfmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\xdf\xdf-objfmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\nasm\nasm-token.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\lc3b\lc3bid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\gas\gas-token.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\x86\x86cpu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\x86\x86regtmod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\nasm\nasm-preproc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2CB02268-A63B-339B-A75A-F98208FC110B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

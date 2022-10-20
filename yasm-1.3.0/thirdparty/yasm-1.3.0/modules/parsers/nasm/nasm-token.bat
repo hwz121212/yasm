@@ -1,0 +1,1 @@
+..\..\..\..\..\tool\re2c\re2c.exe -b -o nasm-token.c nasm-token.re

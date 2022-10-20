@@ -1,0 +1,1 @@
+..\..\..\..\..\tool\yasm-1.3.0\genmacro.exe win64-gas.c win64_gas_stdmac win64-gas.mac

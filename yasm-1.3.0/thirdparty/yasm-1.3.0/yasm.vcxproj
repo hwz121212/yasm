@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C723A6AD-4069-4630-BC15-91D202279B3C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>yasm</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>include;include\libyasm;$(SolutionDir)thirdparty\intl-0.19.8.1\include</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>BUILD_SHARED_LIBS;YASM_LIB_SOURCE;WIN32;_WINDOWS;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    
+    <Link>
+      <AdditionalDependencies>intl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>include;include\libyasm;$(SolutionDir)thirdparty\intl-0.19.8.1\include</AdditionalIncludeDirectories>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>BUILD_SHARED_LIBS;YASM_LIB_SOURCE;WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    
+    <Link>
+      <AdditionalDependencies>intl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\assocdat.c" />
+    <ClCompile Include="src\bitvect.c" />
+    <ClCompile Include="src\bc-align.c" />
+    <ClCompile Include="src\bc-data.c" />
+    <ClCompile Include="src\bc-incbin.c" />
+    <ClCompile Include="src\bc-org.c" />
+    <ClCompile Include="src\bc-reserve.c" />
+    <ClCompile Include="src\bytecode.c" />
+    <ClCompile Include="src\cmake-module.c" />
+    <ClCompile Include="src\errwarn.c" />
+    <ClCompile Include="src\expr.c" />
+    <ClCompile Include="src\file.c" />
+    <ClCompile Include="src\floatnum.c" />
+    <ClCompile Include="src\hamt.c" />
+    <ClCompile Include="src\insn.c" />
+    <ClCompile Include="src\intnum.c" />
+    <ClCompile Include="src\inttree.c" />
+    <ClCompile Include="src\linemap.c" />
+    <ClCompile Include="src\md5.c" />
+    <ClCompile Include="src\mergesort.c" />
+    <ClCompile Include="src\phash.c" />
+    <ClCompile Include="src\section.c" />
+    <ClCompile Include="src\strcasecmp.c" />
+    <ClCompile Include="src\strsep.c" />
+    <ClCompile Include="src\symrec.c" />
+    <ClCompile Include="src\valparam.c" />
+    <ClCompile Include="src\value.c" />
+    <ClCompile Include="src\xmalloc.c" />
+    <ClCompile Include="src\xstrdup.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\libyasm\arch.h" />
+    <ClInclude Include="include\libyasm\assocdat.h" />
+    <ClInclude Include="include\libyasm\bitvect.h" />
+    <ClInclude Include="include\libyasm\bytecode.h" />
+    <ClInclude Include="include\libyasm\compat-queue.h" />
+    <ClInclude Include="include\libyasm\config.h" />
+    <ClInclude Include="include\libyasm\coretype.h" />
+    <ClInclude Include="include\libyasm\dbgfmt.h" />
+    <ClInclude Include="include\libyasm\errwarn.h" />
+    <ClInclude Include="include\libyasm\expr.h" />
+    <ClInclude Include="include\libyasm\file.h" />
+    <ClInclude Include="include\libyasm\floatnum.h" />
+    <ClInclude Include="include\libyasm\hamt.h" />
+    <ClInclude Include="include\libyasm\insn.h" />
+    <ClInclude Include="include\libyasm\intnum.h" />
+    <ClInclude Include="include\libyasm\inttree.h" />
+    <ClInclude Include="include\libyasm\libyasm-stdint.h" />
+    <ClInclude Include="include\libyasm\libyasm.h" />
+    <ClInclude Include="include\libyasm\linemap.h" />
+    <ClInclude Include="include\libyasm\listfmt.h" />
+    <ClInclude Include="include\libyasm\md5.h" />
+    <ClInclude Include="include\libyasm\module.h" />
+    <ClInclude Include="include\libyasm\objfmt.h" />
+    <ClInclude Include="include\libyasm\parser.h" />
+    <ClInclude Include="include\libyasm\phash.h" />
+    <ClInclude Include="include\libyasm\preproc.h" />
+    <ClInclude Include="include\libyasm\section.h" />
+    <ClInclude Include="include\libyasm\symrec.h" />
+    <ClInclude Include="include\libyasm\util.h" />
+    <ClInclude Include="include\libyasm\valparam.h" />
+    <ClInclude Include="include\libyasm\value.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1 @@
+python.exe genstring.py license_msg license.c COPYING

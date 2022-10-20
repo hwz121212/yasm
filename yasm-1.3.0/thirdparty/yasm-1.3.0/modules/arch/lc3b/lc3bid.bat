@@ -1,0 +1,1 @@
+..\..\..\..\..\tool\re2c\re2c.exe -b -o lc3bid.c lc3bid.re

@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="init_plugin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\bin\bin-objfmt.c">
+      <Filter>Source Files\objfmts\bin</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\coff\coff-objfmt.c">
+      <Filter>Source Files\objfmts\coff</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\coff\win64-except.c">
+      <Filter>Source Files\objfmts\coff</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\cpp\cpp-preproc.c">
+      <Filter>Source Files\preprocs\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\codeview\cv-dbgfmt.c">
+      <Filter>Source Files\dbgfmts\codeview</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\codeview\cv-symline.c">
+      <Filter>Source Files\dbgfmts\codeview</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\codeview\cv-type.c">
+      <Filter>Source Files\dbgfmts\codeview</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\dbg\dbg-objfmt.c">
+      <Filter>Source Files\objfmts\dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\dwarf2\dwarf2-aranges.c">
+      <Filter>Source Files\dbgfmts\dwarf2</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\dwarf2\dwarf2-dbgfmt.c">
+      <Filter>Source Files\dbgfmts\dwarf2</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\dwarf2\dwarf2-info.c">
+      <Filter>Source Files\dbgfmts\dwarf2</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\dwarf2\dwarf2-line.c">
+      <Filter>Source Files\dbgfmts\dwarf2</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\elf\elf.c">
+      <Filter>Source Files\objfmts\elf</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\elf\elf-objfmt.c">
+      <Filter>Source Files\objfmts\elf</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\elf\elf-x86-amd64.c">
+      <Filter>Source Files\objfmts\elf</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\elf\elf-x86-x32.c">
+      <Filter>Source Files\objfmts\elf</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\elf\elf-x86-x86.c">
+      <Filter>Source Files\objfmts\elf</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\gas\gas-preproc.c">
+      <Filter>Source Files\preprocs\gas</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\gas\gas-eval.c">
+      <Filter>Source Files\preprocs\gas</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\gas\gas-parser.c">
+      <Filter>Source Files\parsers\gas</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\gas\gas-parse.c">
+      <Filter>Source Files\parsers\gas</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\gas\gas-parse-intel.c">
+      <Filter>Source Files\parsers\gas</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\gas\gas-token.c">
+      <Filter>Source Files\parsers\gas</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\lc3b\lc3bid.c">
+      <Filter>Source Files\arch\lc3b</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\lc3b\lc3barch.c">
+      <Filter>Source Files\arch\lc3b</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\lc3b\lc3bbc.c">
+      <Filter>Source Files\arch\lc3b</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\macho\macho-objfmt.c">
+      <Filter>Source Files\objfmts\macho</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\nasm\nasm-eval.c">
+      <Filter>Source Files\preprocs\nasm</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\nasm\nasmlib.c">
+      <Filter>Source Files\preprocs\nasm</Filter>
+    </ClCompile>
+    <ClCompile Include="listfmts\nasm\nasm-listfmt.c">
+      <Filter>Source Files\listfmts\nasm</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\nasm\nasm-parse.c">
+      <Filter>Source Files\parsers\nasm</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\nasm\nasm-parser.c">
+      <Filter>Source Files\parsers\nasm</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\nasm\nasm-pp.c">
+      <Filter>Source Files\preprocs\nasm</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\nasm\nasm-token.c">
+      <Filter>Source Files\parsers\nasm</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\null\null-dbgfmt.c">
+      <Filter>Source Files\dbgfmts\null</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\raw\raw-preproc.c">
+      <Filter>Source Files\preprocs\raw</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\rdf\rdf-objfmt.c">
+      <Filter>Source Files\objfmts\rdf</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgfmts\stabs\stabs-dbgfmt.c">
+      <Filter>Source Files\dbgfmts\stabs</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\x86\x86arch.c">
+      <Filter>Source Files\arch\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\x86\x86bc.c">
+      <Filter>Source Files\arch\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\x86\x86cpu.c">
+      <Filter>Source Files\arch\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\x86\x86expr.c">
+      <Filter>Source Files\arch\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\x86\x86id.c">
+      <Filter>Source Files\arch\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\x86\x86regtmod.c">
+      <Filter>Source Files\arch\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="objfmts\xdf\xdf-objfmt.c">
+      <Filter>Source Files\objfmts\xdf</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocs\nasm\nasm-preproc.c">
+      <Filter>Source Files\preprocs\nasm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2CB02268-A63B-339B-A75A-F98208FC110B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objfmts">
+      <UniqueIdentifier>{6efbb8c1-3240-420e-9b9c-6c7a3e9c0716}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objfmts\bin">
+      <UniqueIdentifier>{c5496571-8cbb-424e-8e0f-1eceb5493117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objfmts\coff">
+      <UniqueIdentifier>{9d6630c5-99c0-45aa-b043-018db116a60c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\preprocs">
+      <UniqueIdentifier>{6250d428-d800-43a0-86a3-7be5bf5092a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\preprocs\cpp">
+      <UniqueIdentifier>{b57828cd-d8d6-4c8b-9d72-ca71d56f5aab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dbgfmts">
+      <UniqueIdentifier>{45b293de-36e4-48d9-a9a4-3854dbb14121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dbgfmts\codeview">
+      <UniqueIdentifier>{e47445f1-e48d-4ee5-83fb-6d8a56966622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objfmts\dbg">
+      <UniqueIdentifier>{df3c14da-678c-4602-b5ff-8429274c514e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dbgfmts\dwarf2">
+      <UniqueIdentifier>{1b1492b8-7fe5-46c1-9eea-1eec12013c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objfmts\elf">
+      <UniqueIdentifier>{7c34275f-e0ef-479c-b7b8-6eb431cf57be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\preprocs\gas">
+      <UniqueIdentifier>{bf730a26-2353-4523-b4f1-a72c6891fdd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\parsers">
+      <UniqueIdentifier>{cce239a0-ee96-4f96-aa09-2603883f7635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\parsers\gas">
+      <UniqueIdentifier>{8872594b-8821-4fc7-a123-d8d6fc51b165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\arch">
+      <UniqueIdentifier>{54f8e33a-47be-4988-a5de-d2326762b8ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\arch\lc3b">
+      <UniqueIdentifier>{abe9e592-9008-4c35-bfb6-196e3665d940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objfmts\macho">
+      <UniqueIdentifier>{1d7ec253-975a-4fc9-892e-a994b2182db4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\preprocs\nasm">
+      <UniqueIdentifier>{92023ac9-dca7-4c1b-ab08-161059f05fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\listfmts">
+      <UniqueIdentifier>{97d41fd5-5ae9-4e6e-b8c3-bda1648436e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\listfmts\nasm">
+      <UniqueIdentifier>{7532e362-75d4-4af6-94c4-6e9e53bfc166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\parsers\nasm">
+      <UniqueIdentifier>{b94d9909-d60e-4d16-a905-7a4fb05016fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dbgfmts\null">
+      <UniqueIdentifier>{48ee5313-3516-4843-81a1-a50854692e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\preprocs\raw">
+      <UniqueIdentifier>{a46562e2-351d-4389-848a-3c99a974d6e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objfmts\rdf">
+      <UniqueIdentifier>{71287a59-75b0-4bea-a48a-c0f5aacbf0a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dbgfmts\stabs">
+      <UniqueIdentifier>{69ce77fd-04eb-4598-97ea-8c16a2b406f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\arch\x86">
+      <UniqueIdentifier>{2915578e-f9dd-446c-832d-7054bd748c65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objfmts\xdf">
+      <UniqueIdentifier>{13d83d81-5243-4315-acf8-33c41613223b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
